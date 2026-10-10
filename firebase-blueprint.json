@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "User accounts and portfolio state",
+      "type": "object",
+      "properties": {
+        "phone": { "type": "string" },
+        "balance": { "type": "number" },
+        "income": { "type": "number" },
+        "investmentsCount": { "type": "number" },
+        "teamSize": { "type": "number" },
+        "teamEarnings": { "type": "number" },
+        "vipLevel": { "type": "number" },
+        "invitationCode": { "type": "string" }
+      },
+      "required": ["phone"]
+    },
+    "products": {
+      "title": "Product",
+      "description": "Real Estate Investment catalog",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "number" },
+        "dailyIncome": { "type": "number" },
+        "totalIncome": { "type": "number" },
+        "cycleDays": { "type": "number" },
+        "imageUrl": { "type": "string" }
+      },
+      "required": ["title", "price", "dailyIncome"]
+    },
+    "transactions": {
+      "title": "Transaction",
+      "description": "Financial deposit, withdrawal, and earnings records",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "reference": { "type": "string" },
+        "type": { "type": "string" },
+        "amount": { "type": "number" },
+        "date": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["userId", "amount", "type", "status"]
+    },
+    "orders": {
+      "title": "Order",
+      "description": "User property investment orders",
+      "type": "object",
+      "properties": {
+        "userPhone": { "type": "string" },
+        "productTitle": { "type": "string" },
+        "amount": { "type": "number" },
+        "dailyIncome": { "type": "number" },
+        "totalIncome": { "type": "number" },
+        "earnedSoFar": { "type": "number" },
+        "purchaseDate": { "type": "string" }
+      },
+      "required": ["userPhone", "productTitle", "amount"]
+    }
+  }
+}

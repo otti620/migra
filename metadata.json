@@ -1,0 +1,6 @@
+{
+  "name": "Dangote Refinery PLC IPO",
+  "description": "Official Dangote Petroleum Refinery & Petrochemicals PLC IPO / Initial Share Offering (ISO) Platform with Share Allotments, Daily Refinery Yields, VIP Tranches, NGX Shareholdings & Admin Control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
